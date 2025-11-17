@@ -462,7 +462,7 @@ const productData: Record<string, any> = {
 	},
 }
 
-export default async function ProductPage() {
+export default function ProductPage() {
 
 	const params = useParams();
 	const slug = params.slug;
@@ -516,6 +516,7 @@ export default async function ProductPage() {
 				"voyage=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 		}
 	}, []);
+
 
 	return <ProductContent product={product} />
 }
